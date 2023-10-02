@@ -1,0 +1,77 @@
+DEBUG 2023-Sep-17 17:21:23.438524 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 17:21:23.438529 Strategy: TestPybindStrategy Total P&L: $0
+DEBUG 2023-Sep-17 17:25:42.383591 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 17:25:42.383605 Strategy: TestPybindStrategy Total P&L: $897282
+DEBUG 2023-Sep-17 17:25:42.383609 DIA: $897282.159999
+DEBUG 2023-Sep-17 17:32:57.344404 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 17:32:57.344474 Strategy: TestPybindStrategy Total P&L: $1.21121e+06
+DEBUG 2023-Sep-17 17:32:57.344478 DIA: $1211214.089999
+DEBUG 2023-Sep-17 17:36:54.935938 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 17:36:54.935981 Strategy: TestPybindStrategy Total P&L: $318392
+DEBUG 2023-Sep-17 17:36:54.936010 DIA: $318391.920000
+DEBUG 2023-Sep-17 17:39:59.466533 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 17:39:59.466608 Strategy: TestPybindStrategy Total P&L: $967079
+DEBUG 2023-Sep-17 17:39:59.466630 DIA: $967079.129999
+DEBUG 2023-Sep-17 17:45:27.535907 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 17:45:27.535919 Strategy: TestPybindStrategy Total P&L: $1.25292e+06
+DEBUG 2023-Sep-17 17:45:27.535928 DIA: $1252915.449999
+DEBUG 2023-Sep-17 17:46:31.218745 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 17:46:31.218753 Strategy: TestPybindStrategy Total P&L: $1.71659e+06
+DEBUG 2023-Sep-17 17:46:31.218765 DIA: $1716594.339997
+DEBUG 2023-Sep-17 17:50:25.856649 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 17:50:25.856689 Strategy: TestPybindStrategy Total P&L: $1.4305e+06
+DEBUG 2023-Sep-17 17:50:25.856701 DIA: $1430498.979997
+DEBUG 2023-Sep-17 17:51:33.263503 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 17:51:33.263570 Strategy: TestPybindStrategy Total P&L: $1.22581e+06
+DEBUG 2023-Sep-17 17:51:33.263575 DIA: $1225806.019997
+DEBUG 2023-Sep-17 18:00:11.985162 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 18:00:11.985228 Strategy: TestPybindStrategy Total P&L: $812726
+DEBUG 2023-Sep-17 18:00:11.985239 DIA: $812725.649999
+DEBUG 2023-Sep-17 18:05:20.173889 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 18:05:20.173904 Strategy: TestPybindStrategy Total P&L: $256773
+DEBUG 2023-Sep-17 18:05:20.173910 DIA: $256772.599999
+DEBUG 2023-Sep-17 18:15:27.893035 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 18:15:27.893055 Strategy: TestPybindStrategy Total P&L: $863515
+DEBUG 2023-Sep-17 18:15:27.893060 DIA: $863515.239999
+DEBUG 2023-Sep-17 18:29:41.704153 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 18:29:41.704210 Strategy: TestPybindStrategy Total P&L: $1.0064e+06
+DEBUG 2023-Sep-17 18:29:41.704233 DIA: $1006399.489999
+DEBUG 2023-Sep-17 19:04:11.514135 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 19:04:11.514171 Strategy: TestPybindStrategy Total P&L: $345353
+DEBUG 2023-Sep-17 19:04:11.514181 DIA: $345353.159999
+DEBUG 2023-Sep-17 19:05:18.615007 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 19:05:18.615021 Strategy: TestPybindStrategy Total P&L: $914123
+DEBUG 2023-Sep-17 19:05:18.615025 DIA: $914122.599999
+DEBUG 2023-Sep-17 19:13:08.952386 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 19:13:08.952399 Strategy: TestPybindStrategy Total P&L: $949605
+DEBUG 2023-Sep-17 19:13:08.952404 DIA: $949605.449999
+DEBUG 2023-Sep-17 19:15:05.774691 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 19:15:05.774697 Strategy: TestPybindStrategy Total P&L: $513055
+DEBUG 2023-Sep-17 19:15:05.774700 DIA: $513054.679999
+DEBUG 2023-Sep-17 19:29:01.530282 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 19:29:01.530321 Strategy: TestPybindStrategy Total P&L: $1.00705e+06
+DEBUG 2023-Sep-17 19:29:01.530332 DIA: $1007046.289999
+DEBUG 2023-Sep-17 19:33:16.231240 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 19:33:16.231249 Strategy: TestPybindStrategy Total P&L: $804700
+DEBUG 2023-Sep-17 19:33:16.231261 DIA: $804700.209999
+DEBUG 2023-Sep-17 19:34:42.133479 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 19:34:42.133575 Strategy: TestPybindStrategy Total P&L: $603969
+DEBUG 2023-Sep-17 19:34:42.133580 DIA: $603968.759999
+DEBUG 2023-Sep-17 19:39:36.632077 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 19:39:36.632156 Strategy: TestPybindStrategy Total P&L: $1.31781e+06
+DEBUG 2023-Sep-17 19:39:36.632168 DIA: $1317808.419997
+DEBUG 2023-Sep-17 19:56:31.818318 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 19:56:31.818368 Strategy: TestPybindStrategy Total P&L: $547618
+DEBUG 2023-Sep-17 19:56:31.818391 DIA: $547617.639999
+DEBUG 2023-Sep-17 19:57:39.770783 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 19:57:39.770825 Strategy: TestPybindStrategy Total P&L: $176533
+DEBUG 2023-Sep-17 19:57:39.770830 DIA: $176532.600000
+DEBUG 2023-Sep-17 19:58:33.704368 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 19:58:33.704376 Strategy: TestPybindStrategy Total P&L: $166741
+DEBUG 2023-Sep-17 19:58:33.704380 DIA: $166740.960001
+DEBUG 2023-Sep-17 20:02:32.646720 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 20:02:32.646727 Strategy: TestPybindStrategy Total P&L: $2.68888e+06
+DEBUG 2023-Sep-17 20:02:32.646730 DIA: $2688881.479973
+DEBUG 2023-Sep-17 20:21:33.900533 ** Performance Results for Experiment: 1 **
+DEBUG 2023-Sep-17 20:21:33.900549 Strategy: TestPybindStrategy Total P&L: $434208
+DEBUG 2023-Sep-17 20:21:33.900560 DIA: $434208.319998

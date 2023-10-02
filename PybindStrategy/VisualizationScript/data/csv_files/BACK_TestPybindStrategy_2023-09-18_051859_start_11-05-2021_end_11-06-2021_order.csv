@@ -1,0 +1,2 @@
+StrategyName,EntryTime,LastModTime,State,LastUpdateType,Symbol,Side,Type,TIF,Price,Quantity,DisplayQuantity,FilledQty,Remains,AvgFillPrice,ExecutionCost,Account,Trader,Broker,MarketCenter,OrderId,Tag,Reason,Closure
+TestPybindStrategy,2021-Nov-05 13:30:00.297178,2021-Nov-05 13:30:00.297178,FILLED,FILL,AAPL,BUY,LIMIT,DAY,151.880000,10,0,10,0,151.880000,0.012000,SIM-1001-101,dlariviere,FILL_SIMULATOR,IEX,365733645199039,,,

@@ -1,0 +1,81 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu_focal64"
+  config.vm.box_download_location_trusted = "true"
+#  config.vm.box_url = "https://uofi.box.com/shared/static/8k9dskpuahhujffwrfpcs8njsww5h8ad"
+  #config.vm.box_url = [ "https://davidl.web.illinois.edu/vms/ubuntu_2004_for_ss.box" ]
+  #config.vm.box_download_checksum = "dbc011f4c9d7abadee163f1c394df75f6d58a41313eb80e489f86238989efabc89ed10bdba9d995f4075951b2a7441190c087d8cde6cb32c23f976195381b7be"
+  
+  config.vm.box_url = [ "https://davidl.web.illinois.edu/vms/ubuntu_2004_for_ss_no_serial.box" ]
+  config.vm.box_download_checksum = "ea928aa7a5822be15da27f387be3d6e59f38247ce0a66563164c23b9d77e35071a5f85331fbc17ec9d45813c56deffbd3f4adbe259b87757f3d5c9eb523d49be"
+  config.vm.box_download_checksum_type = "sha512"
+
+  config.vm.hostname = "StrategyStudioUbuntu2004"
+
+  config.vm.network "forwarded_port", guest: 13001, host: 8080
+  
+  
+  config.vm.provider :virtualbox do |vb|
+    vb.gui = true
+    vb.cpus = 4
+    #vb.customize ["modifyvm", :id, "--macaddress1", "5CA1AB1E0001" ]
+    vb.customize [
+      "modifyvm", :id,
+      #"--cpuexecutioncap", "50",
+      "--memory", "4096"
+      #"--macaddress1", "080027f76ec0"
+    ]
+    vb.customize [  "modifyvm", :id, "--uart1", "off" ]
+  end 
+
+  config.vm.provision "file", source: "~/.ssh/id_rsa", destination: "/home/vagrant/.ssh/id_rsa"
+  config.vm.provision "file", source: "~/.ssh/id_rsa.pub", destination: "/home/vagrant/.ssh/id_rsa.pub"
+  config.vm.provision "shell", inline: "chmod 0600 /home/vagrant/.ssh/id_rsa"
+  config.vm.provision "shell", inline: "chmod 0644 /home/vagrant/.ssh/id_rsa.pub"
+  #config.vm.provision "file", source: "backup_files/known_hosts", destination: "/home/vagrant/.ssh/known_hosts"
+    
+
+  config.vm.provision "shell", inline: "sudo apt-get update", privileged: false
+  config.vm.provision "shell", inline: "sudo apt-get -y install python3-dev", privileged: false
+#  config.vm.provision "shell", inline: "sudo apt -y install net-tools python3-pip make g++", privileged: false
+  config.vm.provision "shell", inline: "mkdir -p /home/vagrant/ss/bt", privileged: false
+  config.vm.provision "shell", inline: "tar -xzf /vagrant/strategy_studio_ubuntu20_gcc940_server_backtesting_upgrade.3.4.0.0.tar.gz -C /home/vagrant/ss/bt", privileged: false
+  config.vm.provision "shell", inline: "mkdir -p /home/vagrant/ss/sdk", privileged: false
+  config.vm.provision "shell", inline: "tar -xzf /vagrant/strategy_studio_ubuntu20_gcc940_sdk.3.4.0.0.tar.gz -C /home/vagrant/ss/sdk", privileged: false
+  config.vm.provision "shell", inline: "cp /vagrant/license.txt /home/vagrant/ss/bt/.", privileged: false
+  config.vm.provision "shell", inline: "cp /vagrant/backup_files/backtester_config.txt /home/vagrant/ss/bt/.", privileged: false
+  config.vm.provision "file", source: "backup_files/preferred_feeds.csv", destination: "/home/vagrant/ss/bt/preferred_feeds.csv"
+  config.vm.provision "file", source: "backup_files/cmd_config.txt", destination: "/home/vagrant/ss/bt/utilities/cmd_config.txt"
+  config.vm.provision "shell", inline: "cp -R /vagrant/db /home/vagrant/ss/bt/.", privileged: false
+
+  config.vm.provision "shell", inline: "python3 -m pip install pybind11", privileged: false
+#  config.vm.provision "shell", inline: "python3 -m pip install tqdm", privileged: false
+#  config.vm.provision "shell", inline: "sudo snap install --classic pypy3", privileged: false
+#  config.vm.provision "shell", inline: "python3 -m pip install pytz", privileged: false
+#  config.vm.provision "shell", inline: "pypy3 -m ensurepip", privileged: false
+#  config.vm.provision "shell", inline: "pypy3 -m pip install pytz", privileged: false 
+  config.vm.provision "shell", inline: "if [ -e /home/vagrant/ss/bt/text_tick_data ]; then unlink /home/vagrant/ss/bt/text_tick_data; fi", privileged: false 
+  config.vm.provision "shell", inline: "ln -s /vagrant/iexdownloaderparser/data/text_tick_data /home/vagrant/ss/bt/text_tick_data", privileged: false
+
+
+
+  #TODO:
+  #sudo apt -y install net-tools
+  #mkdir -p /vagrant/ss/bt
+  #tar -xzf /vagrant/strategy_studio_ubuntu20_gcc940_server_backtesting_upgrade.3.4.0.0.tar.gz -C /vagrant/ss/bt
+  #mkdir -p /vagrant/ss/sdk
+  #tar -xzf /vagrant/strategy_studio_ubuntu20_gcc940_sdk.3.4.0.0.tar.gz -C /vagrant/ss/sdk
+  
+  #sudo apt -y install make g++
+
+
+  #cd /vagrant/ss/sdk/RCM/StrategyStudio/examples/strategies/SimplePairsStrategy ; make
+  #cp /vagrant/ss/sdk/RCM/StrategyStudio/examples/strategies/SimplePairsStrategy/SimplePairsStrategy.so /vagrant/ss/sdk/RCM/StrategyStudio/LocalDevServer/strategies_dlls/.
+  #cp /vagrant/license.txt /vagrant/ss/bt/.
+  #cp /vagrant/backup_files/backtester_config.txt /vagrant/ss/bt/.
+  #cp -R /vagrant/db /vagrant/ss/bt/.
+
+ 
+
+end
+
+

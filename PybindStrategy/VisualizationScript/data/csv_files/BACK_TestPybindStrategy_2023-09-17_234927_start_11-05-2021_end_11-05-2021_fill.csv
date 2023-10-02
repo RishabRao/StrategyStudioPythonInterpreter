@@ -1,0 +1,4 @@
+StrategyName,TradeTime,Symbol,Quantity,Price,ExecutionCost,LiquidityAction,LiquidityCode,RawLiquidity,Account,Trader,MarketCenter,OrderID,ExecID,TransactionType
+TestPybindStrategy,2021-Nov-05 13:30:00.297178,AAPL,-100,151.850000,0.460144,REMOVED,0,,SIM-1001-101,dlariviere,IEX,365729350156291,,FILL
+TestPybindStrategy,2021-Nov-05 13:30:00.322193,AAPL,-100,151.860000,0.460166,REMOVED,0,,SIM-1001-101,dlariviere,IEX,365729350156292,,FILL
+TestPybindStrategy,2021-Nov-05 13:30:00.322206,AAPL,-100,151.860000,0.460166,REMOVED,0,,SIM-1001-101,dlariviere,IEX,365729350156293,,FILL

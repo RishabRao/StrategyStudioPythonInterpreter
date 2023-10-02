@@ -1,0 +1,7 @@
+#this file should be renamed cmd_config.txt for actual use
+USERNAME=dlariviere
+PASSWORD=password
+SERVER=127.0.0.1
+PORT=13001
+#runmode: 1=Backtesting, 2=Live Simulation, 3=Production, 4=LocalDevelopment
+RUN_MODE=1

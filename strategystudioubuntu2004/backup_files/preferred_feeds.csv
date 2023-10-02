@@ -1,0 +1,5 @@
+# Expected format is: market_center,preferred_quote_source,preferred_trade_source
+# Accepted values for preferred quote and trade sources: BEST; CONSOLIDATED; DIRECT; DEPTH; NONE
+# Market center names correspond to the enum values from MarketCenterID
+#NYSE,DIRECT,DIRECT
+IEX,DEPTH,CONSOLIDATED

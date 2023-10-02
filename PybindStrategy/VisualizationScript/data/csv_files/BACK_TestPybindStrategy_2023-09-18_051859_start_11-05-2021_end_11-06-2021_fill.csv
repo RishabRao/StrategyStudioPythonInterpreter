@@ -1,0 +1,2 @@
+StrategyName,TradeTime,Symbol,Quantity,Price,ExecutionCost,LiquidityAction,LiquidityCode,RawLiquidity,Account,Trader,MarketCenter,OrderID,ExecID,TransactionType
+TestPybindStrategy,2021-Nov-05 13:30:00.297178,AAPL,10,151.880000,0.012000,REMOVED,0,,SIM-1001-101,dlariviere,IEX,365733645199039,,FILL
